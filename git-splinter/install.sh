@@ -3,9 +3,9 @@
 ##
 ## Config
 ##
-SCRIPT_URL="https://raw.githubusercontent.com/sartaj/git-aliases/refs/heads/main/git-push-staged-to/git-push-staged-to.sh"
-ALIAS="push-staged-to"
-DESCRIPTION="Push staged changes to a specific branch"
+SCRIPT_URL="https://raw.githubusercontent.com/sartaj/git-aliases/refs/heads/main/git-splinter/git-splinter.sh"
+ALIAS="splinter"
+DESCRIPTION="Push staged changes to a new branch off of main. Useful for hotfixes and splitting large branches."
 INSTALL_DIR="$HOME/.git-aliases"
 
 ##
