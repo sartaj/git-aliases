@@ -35,7 +35,7 @@ cleanup_test() {
     rm -rf "$TEST_DIR"
 }
 
-# Test that sync-main updates main branch without switching current branch
+# Test that reroot updates main branch without switching current branch
 sync_main_without_switching_branches() {
     # Create and commit a file in main
     echo "initial" > file.txt
@@ -63,8 +63,8 @@ sync_main_without_switching_branches() {
         rm -rf temp
     )
 
-    # Run git-sync-main
-    bash "$SCRIPT_DIR/git-sync-main.sh"
+    # Run git-reroot
+    bash "$SCRIPT_DIR/git-reroot.sh"
 
     # Verify we're still on feature branch
     current_branch=$(git branch --show-current)

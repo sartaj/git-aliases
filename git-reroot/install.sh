@@ -3,9 +3,9 @@
 ##
 ## Config
 ##
-SCRIPT_URL="https://raw.githubusercontent.com/sartaj/git-aliases/refs/heads/main/git-sync-main/git-sync-main.sh"
-ALIAS="sync-main"
-DESCRIPTION="git sync-main fetches+prunes and merges remote main into HEAD main without switching branches"
+SCRIPT_URL="https://raw.githubusercontent.com/sartaj/git-aliases/refs/heads/main/git-reroot/git-reroot.sh"
+ALIAS="reroot"
+DESCRIPTION="git reroot fetches+prunes and merges remote main into HEAD main without switching branches"
 INSTALL_DIR="$HOME/.git-aliases"
 
 ##

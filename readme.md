@@ -9,16 +9,16 @@ Works well with Magit ([Emacs](https://magit.vc/)) ([VSCode](https://github.com/
 ## Quick Install Everything
 
 ```bash
-for a in git-splinter git-flatten git-sync-main; do curl -s "https://raw.githubusercontent.com/sartaj/git-aliases/refs/heads/main/$a/install.sh" | bash; done
+for a in git-splinter git-flatten git-reroot; do curl -s "https://raw.githubusercontent.com/sartaj/git-aliases/refs/heads/main/$a/install.sh" | bash; done
 ```
 
 ## Available Commands
 
-| Command                                           | Description                                                             | Individual Install Command                                                                                           |
-| ------------------------------------------------- | ----------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| `git sync-main`                                   | Update local main branch with remote changes without switching branches | `curl -s https://raw.githubusercontent.com/sartaj/git-aliases/refs/heads/main/git-sync-main/install.sh \| bash`      |
-| `git splinter <branch-name> [-m <message>]` | Push staged changes to a new branch without switching branches          | `curl -s https://raw.githubusercontent.com/sartaj/git-aliases/refs/heads/main/git-splinter/install.sh \| bash` |
-| `git flatten [-m <message>]`                      | Squash all commits since diverging from the base branch                 | `curl -s https://raw.githubusercontent.com/sartaj/git-aliases/refs/heads/main/git-flatten/install.sh \| bash`        |
+| Command                                     | Description                                                             | Individual Install Command                                                                                      |
+| ------------------------------------------- | ----------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| `git reroot`                                | Update local main branch with remote changes without switching branches | `curl -s https://raw.githubusercontent.com/sartaj/git-aliases/refs/heads/main/git-sync-main/install.sh \| bash` |
+| `git splinter <branch-name> [-m <message>]` | Push staged changes to a new branch without switching branches          | `curl -s https://raw.githubusercontent.com/sartaj/git-aliases/refs/heads/main/git-splinter/install.sh \| bash`  |
+| `git flatten [-m <message>]`                | Squash all commits since diverging from the base branch                 | `curl -s https://raw.githubusercontent.com/sartaj/git-aliases/refs/heads/main/git-flatten/install.sh \| bash`   |
 
 ## Contributing
 
