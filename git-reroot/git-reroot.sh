@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# git sync-main - Update local main branch with remote changes without switching branches
+# git reroot - Update local main branch with remote changes without switching branches
 #
 # USAGE:
-#   git sync-main
+#   git reroot
 #
 # DESCRIPTION:
 #   Fetches the latest changes from the remote main branch and updates the local
