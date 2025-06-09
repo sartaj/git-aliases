@@ -1,16 +1,16 @@
 #!/bin/bash
 
-# git push-staged-to - Push staged changes to a new branch without switching branches
+# git splinter - Push staged changes to a new branch without switching branches
 #
 # USAGE:
-#   git push-staged-to <branch-name> [-m <commit-message>]
+#   git splinter <branch-name> [-m <commit-message>]
 #
 # OPTIONS:
 #   -m, --message    Specify a commit message (default: 'update')
 #
 # EXAMPLES:
-#   git push-staged-to feature-123                     # Create branch 'feature-123' with default commit message
-#   git push-staged-to bugfix -m 'Fix memory leak'     # Create branch 'bugfix' with custom commit message
+#   git splinter feature-123                     # Create branch 'feature-123' with default commit message
+#   git splinter bugfix -m 'Fix memory leak'     # Create branch 'bugfix' with custom commit message
 #
 # DESCRIPTION:
 #   Creates a new branch from the default base branch (main/master), applies your
@@ -54,7 +54,7 @@ git_push_staged_to() {
                     shift
                 else
                     echo "Error: Unknown argument '$1'"
-                    echo "Usage: git push-staged-to <branch-name> [-m <commit-message>]"
+                    echo "Usage: git splinter <branch-name> [-m <commit-message>]"
                     return 1
                 fi
                 ;;
@@ -68,7 +68,7 @@ git_push_staged_to() {
     # Check if branch name is provided
     if [[ -z "$NEW_BRANCH_NAME" ]]; then
         echo "Error: Missing branch name"
-        echo "Usage: git push-staged-to <branch-name> [-m <commit-message>]"
+        echo "Usage: git splinter <branch-name> [-m <commit-message>]"
         return 1
     fi
 
